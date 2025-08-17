@@ -979,7 +979,7 @@
 			console.log(email);
 
 			if (email && email.length > 0 && email.includes('@')) {
-				await fetch("http://localhost:3000/add_email_to_fp", {
+				await fetch("https://vizionary-backend-23fd9cc35914.herokuapp.com/add_email_to_fp", {
 					method: "POST",
 					headers: { "Content-Type": "application/json" },
 					body: JSON.stringify({ email, profession }),
